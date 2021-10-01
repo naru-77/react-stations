@@ -1,0 +1,49 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    background-color: brown;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    height: 70px;
+}
+
+.description {
+    margin-top: 100px;
+    margin-left: 50%;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 300px;
+    color: #2285b1;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #2285b1;
+}
+
+button:hover {
+    background-color: #bbbbbb;
+}
+
+button:active {
+    background: brown;
+}
+
+
+img {
+    float: right;
+    width: 50%;
+}
