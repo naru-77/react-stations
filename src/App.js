@@ -2,6 +2,8 @@
 
 import * as React from 'react'
 import './App.css'
+import Header from './Header';
+import Description from './Description';
 
 /**
  * 
@@ -23,16 +25,12 @@ export const App = () => {
       }
     });
   }
-
+  
   const [dogUrl, setDogUrl] = React.useState(" images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg");
   return (
     <div>
-      <header className="header">DOGアプリ</header>
-      <div className="container">
-      <p　className="description">犬の画像を表示するサイトです</p>
-      <img src={dogUrl}></img>
-      <button　onClick={changeUrl}>更新</button>
-      </div>
+      <Header />
+      <Description dogUrl={dogUrl} changeUrl={changeUrl}/>
     </div>
 
 
