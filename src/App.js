@@ -26,7 +26,7 @@ export const App = () => {
     });
   }
   
-  const [dogUrl, setDogUrl] = React.useState(" images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg");
+  const [dogUrl, setDogUrl] = React.useState(" https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg");
   return (
     <div>
       <Header />
