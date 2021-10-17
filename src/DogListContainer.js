@@ -14,4 +14,5 @@ export function DogListContainer(props){
         })
         .catch(err => {})
     },[])
+    return null
 }
