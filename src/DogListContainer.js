@@ -2,10 +2,10 @@
 import React from "react";
 import {useState, useEffect} from 'react'
 
-export function DogListContainer(){
+export function DogListContainer(props){
     const [breeds,setBreeds] = useState([])
 
-    useState(()=>{
+    useEffect(()=>{
         fetch('https://dog.ceo/api/breeds/list/all')
         .then(res=>res.json())
         .then(result => {
