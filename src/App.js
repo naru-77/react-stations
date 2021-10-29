@@ -15,17 +15,6 @@ import { DogListContainer } from './DogListContainer';
 export const App = () => {
 
   const changeUrl = () => {
-    // fetch("https://dog.ceo/api/breeds/image/random")
-    // .then((response) => {
-    //   return response.json();
-    // })
-    // .then((data) => {
-    //   const status = data.status;
-    //   if(status === "success") {
-    //     const dogUrl = data.message;
-    //     setDogUrl(dogUrl);
-    //   }
-    // });
     fetch('https://dog.ceo/api/breeds/image/random')
       .then(res => res.json())
       .then(result => {
